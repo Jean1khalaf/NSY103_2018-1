@@ -1,0 +1,7 @@
+5) les chiffres 0 et 9 sont donnés entre simples quotes pour les considèrent comme char et pas int.
+la signification est qu’il compare si le parameter char entree est entre 0 et 9 comme charactère et non pas comme un nombre.
+
+6) maintenant la fonction est_chiffre va comparer le parametre comme etant un nombre int, alors si l’utilisateur entre 1, la fonction va retourner 1 est une lettre car 1 en ASCII est egal à 49 > 9.
+
+
+
