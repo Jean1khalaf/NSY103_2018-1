@@ -3,7 +3,7 @@
 #define TAILLE 4
 
 int main() {
-    char tab[TAILLE];
+    char tab[TAILLE+1];
     int i = 0;
     
     printf("Entrez %d caractères suivit de Entrée: " , TAILLE);
@@ -12,7 +12,9 @@ int main() {
         i++;
     }
     
+    tab[i] = 0;
     printf("%s\n", tab);
     
     return 0;
 }
+

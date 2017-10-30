@@ -1,0 +1,4 @@
+13) ligne 5: il fait la difference entre a come int qui est egual a 97 et A qui est egual a 65, la difference donne 32.
+ligne 7 a 11: si le charactere entree est une lettre minuscule, il soustraire la difference de ce charactere ce qui donne une lettre majuscule. l’autre cas le charactere entree en majuscule, alors il ne faut pas modifier la lettre.
+
+ 
