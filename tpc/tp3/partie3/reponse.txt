@@ -1,4 +1,20 @@
+1->4:
+Roys-MacBook-Air:tp3 roygeagea$ nano makefile
+Roys-MacBook-Air:tp3 roygeagea$ make
+gcc bonjour.c -o bonjour
+Roys-MacBook-Air:tp3 roygeagea$ ls
+bonjour		bonjour.c	makefile	partie1		partie2		partie3
+Roys-MacBook-Air:tp3 roygeagea$ make
+make: Nothing to be done for `all'.
+Roys-MacBook-Air:tp3 roygeagea$ make clean
+rm -f bonjour
+Roys-MacBook-Air:tp3 roygeagea$ ls
+bonjour.c	makefile	partie1		partie2		partie3
+
 5) le programme bonjour a ete supprimer
+
+6) prog: bonjour.c
+	gcc bonjour.c -o prog
 
 7) on peut modifier ces règles si on veut.
 - Si on modifie la regle all et on ajout prog, dans ce cas quand on lance make le gcc compile bonjour.c en 2 programmes: bonjour et prog
