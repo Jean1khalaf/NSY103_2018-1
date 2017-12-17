@@ -75,7 +75,7 @@ void *consomateur(void *args) {
 }
 //
 // La question! comment savoir que tous les messages produits seront consomés correctement???
-// Response: D'apres le console, on peut regarder la production et la consommation par ordre
+// Réponse: D'apres le console, on peut regarder la production et la consomation par ordre
 //J'ai produit 470211272
 //Je consome 1144108930
 //J'ai produit 101027544
