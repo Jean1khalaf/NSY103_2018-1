@@ -1,0 +1,37 @@
+Partie 1:
+
+1) ls prog[0-9]*
+2) ls prog[a-zA-Z]*
+
+Partie 2:
+
+- Excercice 1:
+
+1) ls prog\ 1*
+2) No such file or directory
+3) ls prog[*]
+4) Oui
+
+- Excercice 2:
+
+1) ls prog\ 1*
+2) ls prog\ *
+3) ls prog[*]
+
+Partie 3:
+
+1) cat f1: affiche le contenu du fichier f1
+   cat f1 > s1: mettre le contenu de f1 dans s1
+   cat f1 f2: affiche le contenu du fichier f1 puis le fichier f2
+   cat f1 f2 > s2: mettre le contenu du fichier f1 puis le fichier f2 dans s2
+2) cat f1 f2 > s2: mettre le contenu du fichier f1 puis le fichier f2 dans s2, alors que cat f1 > s2 mettre le contenu de f1 dans s2 puis cat f2 » s2 ajoute le contenu de f2 a fin du fichier s2. Ils donne le meme resultats.
+3) ls rep1 > liste_rep1.txt
+
+Partie 4:
+
+1) ls -l /usr/bin/ | tr ' ' '\t'
+2) 
+3) 
+4) 
+5) 
+

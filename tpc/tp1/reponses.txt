@@ -1,0 +1,277 @@
+- Exercice 1:
+
+Roys-MacBook-Air:rep1 roygeagea$ cat bonjour.txt
+Bonjour le monde !
+Roys-MacBook-Air:rep1 roygeagea$ cp bonjour.txt bonjour2.txt
+Roys-MacBook-Air:rep1 roygeagea$ ls
+bonjour.txt	bonjour2.txt
+Roys-MacBook-Air:rep1 roygeagea$ cd ../
+Roys-MacBook-Air:tp1 roygeagea$ ls
+rep1
+Roys-MacBook-Air:tp1 roygeagea$ ls rep1
+bonjour.txt	bonjour2.txt
+Roys-MacBook-Air:tp1 roygeagea$ cp -r rep1 rep2
+Roys-MacBook-Air:tp1 roygeagea$ ls
+rep1	rep2
+Roys-MacBook-Air:tp1 roygeagea$ ls rep2
+bonjour.txt	bonjour2.txt
+Roys-MacBook-Air:tp1 roygeagea$ mv rep2 rep_bonjour
+Roys-MacBook-Air:tp1 roygeagea$ ls
+rep1		rep_bonjour
+Roys-MacBook-Air:tp1 roygeagea$ rm rep1/bonjour2.txt
+Roys-MacBook-Air:tp1 roygeagea$ ls rep1
+bonjour.txt
+
+- Exercice 2:
+
+1->4:
+Roys-MacBook-Air:tp1 roygeagea$ cd ../
+Roys-MacBook-Air:tpc roygeagea$ cd ../
+Roys-MacBook-Air:NSY103_2018 roygeagea$ cd ../
+Roys-MacBook-Air:LinuxCourse roygeagea$ cd ../
+Roys-MacBook-Air:Ubunto roygeagea$ cd ../
+Roys-MacBook-Air:Volumes roygeagea$ cd ../
+Roys-MacBook-Air:/ roygeagea$ ls
+Applications			Users				dev				macOS_SDK			tmp
+Library				Volumes				etc				net				usr
+Network				bin				home				private				var
+System				cores				installer.failurerequests	sbin
+Roys-MacBook-Air:/ roygeagea$ cd etc
+Roys-MacBook-Air:etc roygeagea$ ls
+afpovertcp.cfg				defaults				mach_init.d				pam.d					rmtab
+aliases					dnsextd.conf				mach_init_per_login_session.d		passwd					rpc
+aliases.db				emond.d					mach_init_per_user.d			paths					rtadvd.conf
+apache2					find.codes				mail.rc					periodic				security
+asl					fstab.hd				man.conf				pf.anchors				services
+asl.conf				ftpd.conf				manpaths				pf.conf					shells
+auto_home				ftpd.conf.default			master.passwd				pf.os					snmp
+auto_master				ftpusers				nanorc					php-fpm.conf.default			ssh
+autofs.conf				gettytab				networks				php.ini.default				ssl
+bashrc					group					newsyslog.conf				postfix					sudo_lecture
+bashrc_Apple_Terminal			hosts					newsyslog.d				ppp					sudoers
+com.apple.IPConfiguration.plist		hosts.equiv				nfs.conf				profile					sudoers.d
+com.apple.screensharing.agent.launchd	irbrc					notify.conf				protocols				syslog.conf
+csh.cshrc				kern_loader.conf			ntp-restrict.conf			racoon					ttys
+csh.login				krb5.keytab				ntp.conf				rc.common				xtab
+csh.logout				localtime				ntp_opendirectory.conf			rc.netboot				zprofile
+cups					locate.rc				openldap				resolv.conf				zshrc
+Roys-MacBook-Air:etc roygeagea$ more protocols
+#
+#
+# Internet protocols
+#
+# $FreeBSD$
+#       from: @(#)protocols     5.1 (Berkeley) 4/17/89
+# Internet protocols
+#
+# $FreeBSD$
+#       from: @(#)protocols     5.1 (Berkeley) 4/17/89
+#
+# See also http://www.iana.org/assignments/protocol-numbers
+#
+ip      0       IP              # internet protocol, pseudo protocol number
+#hopopt 0       HOPOPT          # hop-by-hop options for ipv6
+icmp    1       ICMP            # internet control message protocol
+igmp    2       IGMP            # internet group management protocol
+ggp     3       GGP             # gateway-gateway protocol
+ipencap 4       IP-ENCAP        # IP encapsulated in IP (officially ``IP'')
+st2     5       ST2             # ST2 datagram mode (RFC 1819) (officially ``ST'')
+tcp     6       TCP             # transmission control protocol
+cbt     7       CBT             # CBT, Tony Ballardie <A.Ballardie@cs.ucl.ac.uk>
+egp     8       EGP             # exterior gateway protocol
+igp     9       IGP             # any private interior gateway (Cisco: for IGRP)
+bbn-rcc 10      BBN-RCC-MON     # BBN RCC Monitoring
+nvp     11      NVP-II          # Network Voice Protocol
+pup     12      PUP             # PARC universal packet protocol
+argus   13      ARGUS           # ARGUS
+emcon   14      EMCON           # EMCON
+xnet    15      XNET            # Cross Net Debugger
+chaos   16      CHAOS           # Chaos
+udp     17      UDP             # user datagram protocol
+mux     18      MUX             # Multiplexing protocol
+dcn     19      DCN-MEAS        # DCN Measurement Subsystems
+hmp     20      HMP             # host monitoring protocol
+prm     21      PRM             # packet radio measurement protocol
+xns-idp 22      XNS-IDP         # Xerox NS IDP
+trunk-1 23      TRUNK-1         # Trunk-1
+trunk-2 24      TRUNK-2         # Trunk-2
+leaf-1  25      LEAF-1          # Leaf-1
+leaf-2  26      LEAF-2          # Leaf-2
+rdp     27      RDP             # "reliable datagram" protocol
+irtp    28      IRTP            # Internet Reliable Transaction Protocol
+iso-tp4 29      ISO-TP4         # ISO Transport Protocol Class 4
+netblt  30      NETBLT          # Bulk Data Transfer Protocol
+mfe-nsp 31      MFE-NSP         # MFE Network Services Protocol
+merit-inp       32      MERIT-INP       # MERIT Internodal Protocol
+dccp    33      DCCP            # Datagram Congestion Control Protocol
+Roys-MacBook-Air:etc roygeagea$ less protocols
+#
+#
+# Internet protocols
+#
+# $FreeBSD$
+#       from: @(#)protocols     5.1 (Berkeley) 4/17/89
+# Internet protocols
+#
+# $FreeBSD$
+#       from: @(#)protocols     5.1 (Berkeley) 4/17/89
+#
+# See also http://www.iana.org/assignments/protocol-numbers
+#
+ip      0       IP              # internet protocol, pseudo protocol number
+#hopopt 0       HOPOPT          # hop-by-hop options for ipv6
+icmp    1       ICMP            # internet control message protocol
+igmp    2       IGMP            # internet group management protocol
+ggp     3       GGP             # gateway-gateway protocol
+ipencap 4       IP-ENCAP        # IP encapsulated in IP (officially ``IP'')
+st2     5       ST2             # ST2 datagram mode (RFC 1819) (officially ``ST'')
+tcp     6       TCP             # transmission control protocol
+cbt     7       CBT             # CBT, Tony Ballardie <A.Ballardie@cs.ucl.ac.uk>
+egp     8       EGP             # exterior gateway protocol
+igp     9       IGP             # any private interior gateway (Cisco: for IGRP)
+bbn-rcc 10      BBN-RCC-MON     # BBN RCC Monitoring
+nvp     11      NVP-II          # Network Voice Protocol
+pup     12      PUP             # PARC universal packet protocol
+argus   13      ARGUS           # ARGUS
+emcon   14      EMCON           # EMCON
+xnet    15      XNET            # Cross Net Debugger
+chaos   16      CHAOS           # Chaos
+udp     17      UDP             # user datagram protocol
+mux     18      MUX             # Multiplexing protocol
+dcn     19      DCN-MEAS        # DCN Measurement Subsystems
+hmp     20      HMP             # host monitoring protocol
+prm     21      PRM             # packet radio measurement protocol
+xns-idp 22      XNS-IDP         # Xerox NS IDP
+trunk-1 23      TRUNK-1         # Trunk-1
+trunk-2 24      TRUNK-2         # Trunk-2
+leaf-1  25      LEAF-1          # Leaf-1
+leaf-2  26      LEAF-2          # Leaf-2
+rdp     27      RDP             # "reliable datagram" protocol
+irtp    28      IRTP            # Internet Reliable Transaction Protocol
+iso-tp4 29      ISO-TP4         # ISO Transport Protocol Class 4
+netblt  30      NETBLT          # Bulk Data Transfer Protocol
+mfe-nsp 31      MFE-NSP         # MFE Network Services Protocol
+merit-inp       32      MERIT-INP       # MERIT Internodal Protocol
+dccp    33      DCCP            # Datagram Congestion Control Protocol
+
+5) Less est un programme similaire à more, mais qui permet un mouvement vers l'arrière dans le fichier ainsi que vers l'avant.
+
+6) Roys-MacBook-Air:etc roygeagea$ less /etc/protocols
+
+7) Roys-MacBook-Air:etc roygeagea$ cd /Volumes/Ubunto/LinuxCourse/NSY103_2018/tpc/tp1/
+
+8) Roys-MacBook-Air:tp1 roygeagea$ pwd
+/Volumes/Ubunto/LinuxCourse/NSY103_2018/tpc/tp1
+
+9) Roys-MacBook-Air:tp1 roygeagea$ cd .
+Roys-MacBook-Air:tp1 roygeagea$ pwd
+/Volumes/Ubunto/LinuxCourse/NSY103_2018/tpc/tp1
+
+On constate que cd . reste dans le meme directoire.
+
+10) Roys-MacBook-Air:tp1 roygeagea$ cd ../
+Roys-MacBook-Air:tpc roygeagea$ pwd
+/Volumes/Ubunto/LinuxCourse/NSY103_2018/tpc
+Roys-MacBook-Air:tpc roygeagea$ cd .
+Roys-MacBook-Air:tpc roygeagea$ pwd
+/Volumes/Ubunto/LinuxCourse/NSY103_2018/tpc
+
+On constate que cd ../ sorte du directoire.
+
+11) Roys-MacBook-Air:tpc roygeagea$ clear
+Roys-MacBook-Air:tpc roygeagea$ ls
+tp1	tp3
+Roys-MacBook-Air:tpc roygeagea$ ls .
+tp1	tp3
+
+Il n'y as pas de difference
+
+.: pour la directoire courante, alors que .. pour la directoire parent.
+
+12) Roys-MacBook-Air:tpc roygeagea$ cd tp1
+Roys-MacBook-Air:tp1 roygeagea$ ls
+rep1		rep_bonjour
+Roys-MacBook-Air:tp1 roygeagea$ vi essai
+Roys-MacBook-Air:tp1 roygeagea$ vi essai
+Roys-MacBook-Air:tp1 roygeagea$ ls
+essai		rep1		rep_bonjour
+
+13) Roys-MacBook-Air:rep1 roygeagea$ vi fich11
+Roys-MacBook-Air:rep1 roygeagea$ vi fich12
+Roys-MacBook-Air:rep1 roygeagea$ mkdir rep2
+Roys-MacBook-Air:rep1 roygeagea$ ls
+bonjour.txt	fich11		fich12		rep2
+Roys-MacBook-Air:rep1 roygeagea$ cd rep2
+Roys-MacBook-Air:rep2 roygeagea$ vi fich21
+Roys-MacBook-Air:rep2 roygeagea$ vi fich22
+Roys-MacBook-Air:rep2 roygeagea$ ls
+fich21	fich22
+Roys-MacBook-Air:rep2 roygeagea$ cd ../
+Roys-MacBook-Air:rep1 roygeagea$ ls
+bonjour.txt	fich11		fich12		rep2
+Roys-MacBook-Air:rep1 roygeagea$ mkdir rep3
+Roys-MacBook-Air:rep1 roygeagea$ cd rep3
+Roys-MacBook-Air:rep3 roygeagea$ ls
+Roys-MacBook-Air:rep3 roygeagea$ vi fich31
+Roys-MacBook-Air:rep3 roygeagea$ vi fich32
+Roys-MacBook-Air:rep3 roygeagea$ ls
+fich31	fich32
+Roys-MacBook-Air:rep3 roygeagea$ cd ../
+Roys-MacBook-Air:rep1 roygeagea$ ls
+bonjour.txt	fich11		fich12		rep2		rep3
+Roys-MacBook-Air:rep1 roygeagea$ cd rep2
+Roys-MacBook-Air:rep2 roygeagea$ ls
+fich21	fich22
+Roys-MacBook-Air:rep2 roygeagea$ cd ../
+Roys-MacBook-Air:rep1 roygeagea$ cd rep3
+Roys-MacBook-Air:rep3 roygeagea$ ls
+fich31	fich32
+Roys-MacBook-Air:rep3 roygeagea$ cd ../
+
+
+14) Roys-MacBook-Air:rep1 roygeagea$ mv rep3 rep2
+Roys-MacBook-Air:rep1 roygeagea$ ls
+bonjour.txt	fich11		fich12		rep2
+Roys-MacBook-Air:rep1 roygeagea$ ls rep2
+fich21	fich22	rep3
+
+
+- Excercie 3:
+
+1) ls -R
+2) rmdir rep1 
+
+- Exercice 4:
+
+1) ...
+2) Roys-MacBook-Air:rep2 roygeagea$ c
+Display all 144 possibilities? (y or n)
+c++                     cd                      clang                   compression_tool        corebrightnessdiag      cpp                     csrutil                 cvaffinity
+c++filt                 certtool                clang++                 conda                   corelist                cpu_profiler.d          ctags                   cvcp
+c2ph                    cfadmin                 clear                   conda-build             corelist5.16            cpuwalk.d               ctf_insert              cvdb
+c2ph5.16                cfprefsd                cmp                     conda-convert           corelist5.18            cq                      cu                      cvdbset
+c2ph5.18                chardetect              cmpdylib                conda-develop           cp                      crc32                   cups-config             cvfsck
+c89                     chat                    codesign                conda-env               cpan                    crc325.16               cupsaccept              cvfsdb
+c99                     checkgid                codesign_allocate       conda-index             cpan2dist               crc325.18               cupsaddsmb              cvfsid
+c_rehash                checknr                 col                     conda-inspect           cpan2dist5.16           creatbyproc.d           cupsctl                 cvgather
+caffeinate              chflags                 colcrt                  conda-metapackage       cpan2dist5.18           createfontdatachunk.py  cupsdisable             cvlabel
+cal                     chfn                    colldef                 conda-render            cpan5.16                createhomedir           cupsenable              cvmkdir
+calendar                chgrp                   colrm                   conda-server            cpan5.18                crlrefresh              cupsfilter              cvmkfile
+caller                  chmod                   column                  conda-skeleton          cpanp                   cron                    cupsreject              cvmkfs
+cancel                  chown                   comm                    conda-verify            cpanp-run-perl          crontab                 cupstestdsc             cvupdatefs
+cap_mkdb                chpass                  command                 config_data             cpanp-run-perl5.16      csdiagnose              cupstestppd             cvversions
+captoinfo               chroot                  compgen                 config_data5.16         cpanp-run-perl5.18      csgather                curl                    cwutil
+case                    chsh                    complete                config_data5.18         cpanp5.16               csh                     curl-config             cygdb
+cat                     cjpeg                   composer                continue                cpanp5.18               csplit                  cut                     cython
+cc                      cksum                   compress                coreaudiod              cpio                    csreq                   cvadmin                 cythonize
+
+cd re + tab: elle donne le nom complet de la repertoire qui est: rep3
+
+3) ...
+
+
+
+
+
+
+

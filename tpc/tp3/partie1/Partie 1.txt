@@ -1,0 +1,18 @@
+Partie 1:
+
+1->6:
+Roys-MacBook-Air:tp3 roygeagea$ mkdir tpc
+Roys-MacBook-Air:tp3 roygeagea$ cd tpc/
+Roys-MacBook-Air:tpc roygeagea$ nano bonjour.c
+Roys-MacBook-Air:tpc roygeagea$ cc bonjour.c
+Roys-MacBook-Air:tpc roygeagea$ ls
+a.out		bonjour.c
+Roys-MacBook-Air:tpc roygeagea$ ./a.out
+Bonjour le monde
+7)
+Roys-MacBook-Air:tpc roygeagea$ nano bonjour.c
+Roys-MacBook-Air:tpc roygeagea$ cc bonjour.c
+Roys-MacBook-Air:tpc roygeagea$ ./a.out
+Bonjour le mondeRoys-MacBook-Air:tpc roygeagea$
+
+On constate qu'il ne revient pas a la ligne

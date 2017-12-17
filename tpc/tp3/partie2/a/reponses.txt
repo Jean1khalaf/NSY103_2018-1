@@ -1,0 +1,17 @@
+partir 2: a)
+
+1)
+Roys-MacBook-Air:tp3 roygeagea$ nano listing2.c
+Roys-MacBook-Air:tp3 roygeagea$ gcc -o listing2ex listing2.c
+Roys-MacBook-Air:tp3 roygeagea$ ./listing2ex
+Entrez un caractère : c
+Voici le caractère entré : c
+
+2)
+Roys-MacBook-Air:tp3 roygeagea$ nano listing2.c
+Roys-MacBook-Air:tp3 roygeagea$ gcc -o listing2ex listing2.c
+Roys-MacBook-Air:tp3 roygeagea$ ./listing2ex
+Entrez un caractère : c
+Voici le caractère entré : 99
+
+on constate que le programme affiche le charactere entree par son nombre en ASCII

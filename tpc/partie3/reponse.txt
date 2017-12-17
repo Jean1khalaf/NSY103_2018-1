@@ -1,8 +1,0 @@
-5) le programme bonjour a ete supprimer
-
-7) on peut modifier ces règles si on veut.
-- Si on modifie la regle all et on ajout prog, dans ce cas quand on lance make le gcc compile bonjour.c en 2 programmes: bonjour et prog
-- Si on modifie la règle make et on ajout rm -f prog, dans ce cas quand on lance make clean les 2 programmes (bonjour et prog) doivent etre supprimer.
-
-8) make prog
-   make bonjour
